@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF0AEBA31D2C0FD900C8D9A5 /* GunDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0AEBA21D2C0FD900C8D9A5 /* GunDetailViewController.swift */; };
+		DF0AEBA51D2D549300C8D9A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0AEBA41D2D549300C8D9A5 /* BaseViewController.swift */; };
+		DF7888201D281F7800A6BB48 /* weapons.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF78881F1D281F7800A6BB48 /* weapons.plist */; };
+		DF78882A1D28B60700A6BB48 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7888291D28B60700A6BB48 /* Weapon.swift */; };
+		DF78882C1D28B61500A6BB48 /* WeaponManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78882B1D28B61500A6BB48 /* WeaponManager.swift */; };
+		DFE5DA9C1CDC78040097239A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5DA9B1CDC78040097239A /* AppDelegate.swift */; };
+		DFE5DA9E1CDC78040097239A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5DA9D1CDC78040097239A /* ViewController.swift */; };
+		DFE5DAA11CDC78040097239A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE5DA9F1CDC78040097239A /* Main.storyboard */; };
+		DFE5DAA31CDC78040097239A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE5DAA21CDC78040097239A /* Assets.xcassets */; };
+		DFE5DAA61CDC78040097239A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE5DAA41CDC78040097239A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF0AEBA21D2C0FD900C8D9A5 /* GunDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunDetailViewController.swift; sourceTree = "<group>"; };
+		DF0AEBA41D2D549300C8D9A5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DF78881F1D281F7800A6BB48 /* weapons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = weapons.plist; sourceTree = "<group>"; };
+		DF7888291D28B60700A6BB48 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		DF78882B1D28B61500A6BB48 /* WeaponManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponManager.swift; sourceTree = "<group>"; };
+		DFE5DA981CDC78040097239A /* Guns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guns.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE5DA9B1CDC78040097239A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFE5DA9D1CDC78040097239A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFE5DAA01CDC78040097239A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFE5DAA21CDC78040097239A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFE5DAA51CDC78040097239A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFE5DAA71CDC78040097239A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFE5DA951CDC78040097239A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFE5DA8F1CDC78040097239A = {
+			isa = PBXGroup;
+			children = (
+				DFE5DA9A1CDC78040097239A /* Guns */,
+				DFE5DA991CDC78040097239A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFE5DA991CDC78040097239A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5DA981CDC78040097239A /* Guns.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFE5DA9A1CDC78040097239A /* Guns */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5DA9B1CDC78040097239A /* AppDelegate.swift */,
+				DFE5DA9F1CDC78040097239A /* Main.storyboard */,
+				DF0AEBA41D2D549300C8D9A5 /* BaseViewController.swift */,
+				DFE5DA9D1CDC78040097239A /* ViewController.swift */,
+				DF0AEBA21D2C0FD900C8D9A5 /* GunDetailViewController.swift */,
+				DF78882B1D28B61500A6BB48 /* WeaponManager.swift */,
+				DF78881F1D281F7800A6BB48 /* weapons.plist */,
+				DFE5DAA71CDC78040097239A /* Info.plist */,
+				DFE5DAA41CDC78040097239A /* LaunchScreen.storyboard */,
+				DF7888291D28B60700A6BB48 /* Weapon.swift */,
+				DFE5DAA21CDC78040097239A /* Assets.xcassets */,
+			);
+			path = Guns;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFE5DA971CDC78040097239A /* Guns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE5DAC01CDC78040097239A /* Build configuration list for PBXNativeTarget "Guns" */;
+			buildPhases = (
+				DFE5DA941CDC78040097239A /* Sources */,
+				DFE5DA951CDC78040097239A /* Frameworks */,
+				DFE5DA961CDC78040097239A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Guns;
+			productName = Guns;
+			productReference = DFE5DA981CDC78040097239A /* Guns.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFE5DA901CDC78040097239A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "赤迫亮太";
+				TargetAttributes = {
+					DFE5DA971CDC78040097239A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = P8ZL6BG65J;
+					};
+				};
+			};
+			buildConfigurationList = DFE5DA931CDC78040097239A /* Build configuration list for PBXProject "Guns" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFE5DA8F1CDC78040097239A;
+			productRefGroup = DFE5DA991CDC78040097239A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFE5DA971CDC78040097239A /* Guns */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFE5DA961CDC78040097239A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE5DAA61CDC78040097239A /* LaunchScreen.storyboard in Resources */,
+				DF7888201D281F7800A6BB48 /* weapons.plist in Resources */,
+				DFE5DAA31CDC78040097239A /* Assets.xcassets in Resources */,
+				DFE5DAA11CDC78040097239A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFE5DA941CDC78040097239A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF78882C1D28B61500A6BB48 /* WeaponManager.swift in Sources */,
+				DFE5DA9E1CDC78040097239A /* ViewController.swift in Sources */,
+				DF0AEBA31D2C0FD900C8D9A5 /* GunDetailViewController.swift in Sources */,
+				DF78882A1D28B60700A6BB48 /* Weapon.swift in Sources */,
+				DFE5DA9C1CDC78040097239A /* AppDelegate.swift in Sources */,
+				DF0AEBA51D2D549300C8D9A5 /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DFE5DA9F1CDC78040097239A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFE5DAA01CDC78040097239A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFE5DAA41CDC78040097239A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFE5DAA51CDC78040097239A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFE5DABE1CDC78040097239A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFE5DABF1CDC78040097239A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFE5DAC11CDC78040097239A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Guns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ichimots.Guns;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		DFE5DAC21CDC78040097239A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Guns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ichimots.Guns;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFE5DA931CDC78040097239A /* Build configuration list for PBXProject "Guns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE5DABE1CDC78040097239A /* Debug */,
+				DFE5DABF1CDC78040097239A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE5DAC01CDC78040097239A /* Build configuration list for PBXNativeTarget "Guns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE5DAC11CDC78040097239A /* Debug */,
+				DFE5DAC21CDC78040097239A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFE5DA901CDC78040097239A /* Project object */;
+}
