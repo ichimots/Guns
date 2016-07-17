@@ -111,6 +111,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="9Je-2Q-o5F" kind="show" identifier="pushGunDetail" trigger="accessoryAction" id="QrG-gQ-pMT"/>
                                         </connections>
@@ -529,7 +530,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="V8j-ok-XIr" firstAttribute="trailing" secondItem="XHi-yZ-VAk" secondAttribute="trailing" id="10Q-ab-4lD"/>
                                             <constraint firstItem="2MX-l1-rvJ" firstAttribute="centerY" secondItem="DcW-wy-ZYS" secondAttribute="centerY" id="1Er-oR-3Ut"/>
@@ -695,7 +696,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Dlq-8A-JNj" firstAttribute="top" secondItem="hyY-fK-9dh" secondAttribute="bottom" id="DUF-BZ-Eib"/>
                             <constraint firstItem="hyY-fK-9dh" firstAttribute="leading" secondItem="xL0-lf-DF0" secondAttribute="leading" id="Fos-bx-k7a"/>
