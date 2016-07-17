@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		DF0AEBA31D2C0FD900C8D9A5 /* GunDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0AEBA21D2C0FD900C8D9A5 /* GunDetailViewController.swift */; };
 		DF0AEBA51D2D549300C8D9A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0AEBA41D2D549300C8D9A5 /* BaseViewController.swift */; };
-		DF7888201D281F7800A6BB48 /* weapons.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF78881F1D281F7800A6BB48 /* weapons.plist */; };
 		DF78882A1D28B60700A6BB48 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7888291D28B60700A6BB48 /* Weapon.swift */; };
 		DF78882C1D28B61500A6BB48 /* WeaponManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78882B1D28B61500A6BB48 /* WeaponManager.swift */; };
+		DFA6F02B1D3B7D5200B54791 /* AVA銃器スペック.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFA6F02A1D3B7D5200B54791 /* AVA銃器スペック.plist */; };
 		DFE5DA9C1CDC78040097239A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5DA9B1CDC78040097239A /* AppDelegate.swift */; };
 		DFE5DA9E1CDC78040097239A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5DA9D1CDC78040097239A /* ViewController.swift */; };
 		DFE5DAA11CDC78040097239A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE5DA9F1CDC78040097239A /* Main.storyboard */; };
@@ -22,9 +22,9 @@
 /* Begin PBXFileReference section */
 		DF0AEBA21D2C0FD900C8D9A5 /* GunDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GunDetailViewController.swift; sourceTree = "<group>"; };
 		DF0AEBA41D2D549300C8D9A5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		DF78881F1D281F7800A6BB48 /* weapons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = weapons.plist; sourceTree = "<group>"; };
 		DF7888291D28B60700A6BB48 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		DF78882B1D28B61500A6BB48 /* WeaponManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponManager.swift; sourceTree = "<group>"; };
+		DFA6F02A1D3B7D5200B54791 /* AVA銃器スペック.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AVA銃器スペック.plist"; sourceTree = "<group>"; };
 		DFE5DA981CDC78040097239A /* Guns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE5DA9B1CDC78040097239A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFE5DA9D1CDC78040097239A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,13 +64,13 @@
 		DFE5DA9A1CDC78040097239A /* Guns */ = {
 			isa = PBXGroup;
 			children = (
+				DFA6F02A1D3B7D5200B54791 /* AVA銃器スペック.plist */,
 				DFE5DA9B1CDC78040097239A /* AppDelegate.swift */,
 				DFE5DA9F1CDC78040097239A /* Main.storyboard */,
 				DF0AEBA41D2D549300C8D9A5 /* BaseViewController.swift */,
 				DFE5DA9D1CDC78040097239A /* ViewController.swift */,
 				DF0AEBA21D2C0FD900C8D9A5 /* GunDetailViewController.swift */,
 				DF78882B1D28B61500A6BB48 /* WeaponManager.swift */,
-				DF78881F1D281F7800A6BB48 /* weapons.plist */,
 				DFE5DAA71CDC78040097239A /* Info.plist */,
 				DFE5DAA41CDC78040097239A /* LaunchScreen.storyboard */,
 				DF7888291D28B60700A6BB48 /* Weapon.swift */,
@@ -139,8 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFE5DAA61CDC78040097239A /* LaunchScreen.storyboard in Resources */,
-				DF7888201D281F7800A6BB48 /* weapons.plist in Resources */,
 				DFE5DAA31CDC78040097239A /* Assets.xcassets in Resources */,
+				DFA6F02B1D3B7D5200B54791 /* AVA銃器スペック.plist in Resources */,
 				DFE5DAA11CDC78040097239A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

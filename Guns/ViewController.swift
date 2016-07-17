@@ -19,7 +19,19 @@ internal final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        weapons = WeaponManager().getWeapon(kindsOfWeapon)
+        weapons = WeaponManager.sharedManager.getWeapon(kindsOfWeapon)
+        
+        let title: String
+        switch kindsOfWeapon {
+        case .PointMan:
+            title = "PointMan"
+        case .RifleMan:
+            title = "RifleMan"
+        case .SniperRifle:
+            title = "SniperRifle"
+        }
+        navigationItem.title = title
+        
         tableView.delegate = self
         tableView.dataSource = self
     }

@@ -15,24 +15,31 @@ enum WeaponType: String {
     case SniperRifle = "SR"
 }
 
-internal struct WeaponManager {
+internal final class WeaponManager {
+    
+    static var sharedManager = WeaponManager()
+    
+    private var weapons: [Weapon]?
     
     func getWeapon(type: WeaponType) -> [Weapon] {
         
-        let path = NSBundle.mainBundle().pathForResource("weapons", ofType: "plist")
-        let dictionary = NSDictionary(contentsOfFile: path!)
+        if weapons == nil {
+            weapons = [Weapon]()
+            
+            let path = NSBundle.mainBundle().pathForResource("AVA銃器スペック", ofType: "plist")
+            let weaponObjects = NSArray(contentsOfFile: path!) as! [[String: AnyObject]]
+            weaponObjects.forEach{
+                weapons?.append(weaponMapping($0))
+            }
+        }
         
-        let weaponObjects = dictionary?.objectForKey(type.rawValue) as! [[String: AnyObject]]
-        
-        var weapons = [Weapon]()
-        weaponObjects.forEach{ weapons.append(weaponMapping($0)) }
-        
-        return weapons
+        return weapons?.filter { $0.branch == type.rawValue } ?? [Weapon]()
     }
     
     private func weaponMapping(item: [String: AnyObject]) -> Weapon {
         
-        return Weapon(name                 : item["武器名"] as! String,
+        return Weapon(branch               : item["兵科"] as! String,
+                      name                 : item["武器名"] as! String,
                       damage               : Damage(average: item["平均攻撃力"] as! Double,
                                                     min    : item["最小攻撃力"] as! Double,
                                                     max    : item["最大攻撃力"] as! Double),

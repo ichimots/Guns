@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Base View Controller-->
+        <!--兵科-->
         <scene sceneID="IHh-Mb-KmA">
             <objects>
                 <viewController id="a4l-Lx-AH2" customClass="BaseViewController" customModule="Guns" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,38 +18,71 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKE-Pv-KRU">
-                                <rect key="frame" x="268" y="155" width="65" height="30"/>
-                                <state key="normal" title="PointMan"/>
+                                <rect key="frame" x="20" y="114" width="560" height="132"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="PointMan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="pm" id="9T3-Ug-lgg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxH-GO-26l">
-                                <rect key="frame" x="270" y="285" width="60" height="30"/>
-                                <state key="normal" title="RifleMan"/>
+                                <rect key="frame" x="20" y="266" width="560" height="132"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="RifleMan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="rm" id="AIz-oc-Zb1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U5-Sf-x6V">
-                                <rect key="frame" x="263" y="415" width="75" height="30"/>
-                                <state key="normal" title="SniperRifle"/>
+                                <rect key="frame" x="20" y="418" width="560" height="132"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="SniperRifle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="sr" id="5th-8c-Gil"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="RKE-Pv-KRU" firstAttribute="centerX" secondItem="POx-wl-Ca9" secondAttribute="centerX" id="2z9-0g-iFK"/>
-                            <constraint firstItem="UxH-GO-26l" firstAttribute="centerX" secondItem="POx-wl-Ca9" secondAttribute="centerX" id="9ac-r6-1kG"/>
-                            <constraint firstItem="3U5-Sf-x6V" firstAttribute="top" secondItem="UxH-GO-26l" secondAttribute="bottom" constant="100" id="L0c-Xq-JQM"/>
-                            <constraint firstItem="UxH-GO-26l" firstAttribute="top" secondItem="RKE-Pv-KRU" secondAttribute="bottom" constant="100" id="Oqc-qI-gbR"/>
-                            <constraint firstItem="3U5-Sf-x6V" firstAttribute="centerX" secondItem="POx-wl-Ca9" secondAttribute="centerX" id="RnA-CS-fPl"/>
-                            <constraint firstItem="UxH-GO-26l" firstAttribute="centerY" secondItem="POx-wl-Ca9" secondAttribute="centerY" id="clD-e9-edJ"/>
+                            <constraint firstAttribute="trailing" secondItem="RKE-Pv-KRU" secondAttribute="trailing" constant="20" id="7fB-qC-5oy"/>
+                            <constraint firstItem="3U5-Sf-x6V" firstAttribute="leading" secondItem="POx-wl-Ca9" secondAttribute="leading" constant="20" id="7qg-e5-iPq"/>
+                            <constraint firstItem="UxH-GO-26l" firstAttribute="top" secondItem="RKE-Pv-KRU" secondAttribute="bottom" constant="20" id="Eoq-If-e1O"/>
+                            <constraint firstItem="3U5-Sf-x6V" firstAttribute="top" secondItem="UxH-GO-26l" secondAttribute="bottom" constant="20" id="O0C-cS-niL"/>
+                            <constraint firstItem="3U5-Sf-x6V" firstAttribute="height" secondItem="RKE-Pv-KRU" secondAttribute="height" id="Tfc-wX-p1J"/>
+                            <constraint firstAttribute="trailing" secondItem="UxH-GO-26l" secondAttribute="trailing" constant="20" id="doT-9c-9lH"/>
+                            <constraint firstAttribute="trailing" secondItem="3U5-Sf-x6V" secondAttribute="trailing" constant="20" id="g9T-U2-Xon"/>
+                            <constraint firstItem="RKE-Pv-KRU" firstAttribute="leading" secondItem="POx-wl-Ca9" secondAttribute="leading" constant="20" id="gq5-Ay-hGb"/>
+                            <constraint firstItem="UxH-GO-26l" firstAttribute="height" secondItem="RKE-Pv-KRU" secondAttribute="height" id="n0i-4v-4sQ"/>
+                            <constraint firstItem="RKE-Pv-KRU" firstAttribute="top" secondItem="vsO-eT-dLY" secondAttribute="bottom" constant="50" id="qwq-BE-q7a"/>
+                            <constraint firstItem="JQ6-hd-CEv" firstAttribute="top" secondItem="3U5-Sf-x6V" secondAttribute="bottom" constant="50" id="rd5-YI-SM2"/>
+                            <constraint firstItem="UxH-GO-26l" firstAttribute="leading" secondItem="POx-wl-Ca9" secondAttribute="leading" constant="20" id="uZ4-e4-CIz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zjb-bg-k3Z"/>
+                    <navigationItem key="navigationItem" title="兵科" id="zjb-bg-k3Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHL-RF-jLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
