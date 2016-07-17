@@ -64,16 +64,16 @@
 		DFE5DA9A1CDC78040097239A /* Guns */ = {
 			isa = PBXGroup;
 			children = (
-				DFA6F02A1D3B7D5200B54791 /* AVA銃器スペック.plist */,
-				DFE5DA9B1CDC78040097239A /* AppDelegate.swift */,
 				DFE5DA9F1CDC78040097239A /* Main.storyboard */,
+				DFE5DA9B1CDC78040097239A /* AppDelegate.swift */,
 				DF0AEBA41D2D549300C8D9A5 /* BaseViewController.swift */,
 				DFE5DA9D1CDC78040097239A /* ViewController.swift */,
 				DF0AEBA21D2C0FD900C8D9A5 /* GunDetailViewController.swift */,
 				DF78882B1D28B61500A6BB48 /* WeaponManager.swift */,
+				DF7888291D28B60700A6BB48 /* Weapon.swift */,
+				DFA6F02A1D3B7D5200B54791 /* AVA銃器スペック.plist */,
 				DFE5DAA71CDC78040097239A /* Info.plist */,
 				DFE5DAA41CDC78040097239A /* LaunchScreen.storyboard */,
-				DF7888291D28B60700A6BB48 /* Weapon.swift */,
 				DFE5DAA21CDC78040097239A /* Assets.xcassets */,
 			);
 			path = Guns;
