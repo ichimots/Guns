@@ -37,6 +37,9 @@ internal struct Shoot {
 
 /// 武器
 internal struct Weapon {
+    /// 兵科
+    let branch: String
+    
     /// 武器名
     let name: String
     
