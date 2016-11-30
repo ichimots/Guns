@@ -19,7 +19,7 @@ internal final class WeaponManager {
     
     static var sharedManager = WeaponManager()
     
-    fileprivate var weapons: [Weapon]?
+    private var weapons: [Weapon]?
     
     func getWeapon(_ type: WeaponType) -> [Weapon] {
         
@@ -36,7 +36,7 @@ internal final class WeaponManager {
         return weapons?.filter { $0.branch == type.rawValue } ?? [Weapon]()
     }
     
-    fileprivate func weaponMapping(_ item: [String: AnyObject]) -> Weapon {
+    private func weaponMapping(_ item: [String: AnyObject]) -> Weapon {
         
         return Weapon(branch               : item["兵科"] as? String ?? "",
                       name                 : item["武器名"] as? String ?? "",
@@ -59,7 +59,7 @@ internal final class WeaponManager {
                       mountSpeed           : item["装着時間"] as? Double ?? 0)
     }
     
-    fileprivate func makeShoot(_ item: [String: AnyObject], label: String) -> Shoot {
+    private func makeShoot(_ item: [String: AnyObject], label: String) -> Shoot {
         return Shoot(stop : item[label + "_静射"] as? Double ?? 0,
                      squat: item[label + "_蹲射"] as? Double ?? 0,
                      walk : item[label + "_動射"] as? Double ?? 0,

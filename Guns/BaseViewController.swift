@@ -21,20 +21,11 @@ internal final class BaseViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let view       = segue.destination as? ViewController,
-                  let identifier = segue.identifier else {
+              let identifier = segue.identifier else {
             return
         }
         
-        switch identifier {
-        case "pm":
-            view.kindsOfWeapon = .pointMan
-        case "rm":
-            view.kindsOfWeapon = .rifleMan
-        case "sr":
-            view.kindsOfWeapon = .sniperRifle
-        default:
-            break
-        }
+        view.kindsOfWeapon = WeaponType(rawValue: identifier) ?? .pointMan
     }
     
 }
