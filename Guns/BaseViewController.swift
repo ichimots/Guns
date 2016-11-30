@@ -18,20 +18,20 @@ internal final class BaseViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard let view       = segue.destinationViewController as? ViewController,
-                  identifier = segue.identifier else {
+        guard let view       = segue.destination as? ViewController,
+                  let identifier = segue.identifier else {
             return
         }
         
         switch identifier {
         case "pm":
-            view.kindsOfWeapon = .PointMan
+            view.kindsOfWeapon = .pointMan
         case "rm":
-            view.kindsOfWeapon = .RifleMan
+            view.kindsOfWeapon = .rifleMan
         case "sr":
-            view.kindsOfWeapon = .SniperRifle
+            view.kindsOfWeapon = .sniperRifle
         default:
             break
         }

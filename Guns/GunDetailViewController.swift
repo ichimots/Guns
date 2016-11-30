@@ -12,75 +12,75 @@ internal final class GunDetailViewController: UIViewController {
     
     var weapon: Weapon?
     
-    @IBOutlet private weak var averageDamageLabel: UILabel!
+    @IBOutlet fileprivate weak var averageDamageLabel: UILabel!
     
-    @IBOutlet private weak var minDamageLabel: UILabel!
+    @IBOutlet fileprivate weak var minDamageLabel: UILabel!
     
-    @IBOutlet private weak var maxDamageLabel: UILabel!
+    @IBOutlet fileprivate weak var maxDamageLabel: UILabel!
     
-    @IBOutlet private weak var blastLabel: UILabel!
+    @IBOutlet fileprivate weak var blastLabel: UILabel!
     
-    @IBOutlet private weak var throughLabel: UILabel!
+    @IBOutlet fileprivate weak var throughLabel: UILabel!
     
-    @IBOutlet private weak var rangeLabel: UILabel!
+    @IBOutlet fileprivate weak var rangeLabel: UILabel!
     
-    @IBOutlet private weak var firstAccuracyStopLabel: UILabel!
+    @IBOutlet fileprivate weak var firstAccuracyStopLabel: UILabel!
     
-    @IBOutlet private weak var firstAccuracySquatLabel: UILabel!
+    @IBOutlet fileprivate weak var firstAccuracySquatLabel: UILabel!
     
-    @IBOutlet private weak var firstAccuracyWalkLabel: UILabel!
+    @IBOutlet fileprivate weak var firstAccuracyWalkLabel: UILabel!
     
-    @IBOutlet private weak var firstAccuracyJumpLabel: UILabel!
+    @IBOutlet fileprivate weak var firstAccuracyJumpLabel: UILabel!
     
-    @IBOutlet private weak var aimFirstAccuracyStopLabel: UILabel!
+    @IBOutlet fileprivate weak var aimFirstAccuracyStopLabel: UILabel!
     
-    @IBOutlet private weak var aimFirstAccuracySquatLabel: UILabel!
+    @IBOutlet fileprivate weak var aimFirstAccuracySquatLabel: UILabel!
     
-    @IBOutlet private weak var aimFirstAccuracyWalkLabel: UILabel!
+    @IBOutlet fileprivate weak var aimFirstAccuracyWalkLabel: UILabel!
     
-    @IBOutlet private weak var aimFirstAccuracyJumpLabel: UILabel!
+    @IBOutlet fileprivate weak var aimFirstAccuracyJumpLabel: UILabel!
     
-    @IBOutlet private weak var rapidFireAccuracyStopLabel: UILabel!
+    @IBOutlet fileprivate weak var rapidFireAccuracyStopLabel: UILabel!
     
-    @IBOutlet private weak var rapidFireAccuracySquatLabel: UILabel!
+    @IBOutlet fileprivate weak var rapidFireAccuracySquatLabel: UILabel!
     
-    @IBOutlet private weak var rapidFireAccuracyWalkLabel: UILabel!
+    @IBOutlet fileprivate weak var rapidFireAccuracyWalkLabel: UILabel!
     
-    @IBOutlet private weak var rapidFireAccuracyJumpLabel: UILabel!
+    @IBOutlet fileprivate weak var rapidFireAccuracyJumpLabel: UILabel!
     
-    @IBOutlet private weak var aimRapidFireAccuracyStopLabel: UILabel!
+    @IBOutlet fileprivate weak var aimRapidFireAccuracyStopLabel: UILabel!
     
-    @IBOutlet private weak var aimRapidFireAccuracySquatLabel: UILabel!
+    @IBOutlet fileprivate weak var aimRapidFireAccuracySquatLabel: UILabel!
     
-    @IBOutlet private weak var aimRapidFireAccuracyWalkLabel: UILabel!
+    @IBOutlet fileprivate weak var aimRapidFireAccuracyWalkLabel: UILabel!
     
-    @IBOutlet private weak var aimRapidFireAccuracyJumpLabel: UILabel!
+    @IBOutlet fileprivate weak var aimRapidFireAccuracyJumpLabel: UILabel!
     
-    @IBOutlet private weak var recoilSuppressionStopLabel: UILabel!
+    @IBOutlet fileprivate weak var recoilSuppressionStopLabel: UILabel!
     
-    @IBOutlet private weak var recoilSuppressionSquatLabel: UILabel!
+    @IBOutlet fileprivate weak var recoilSuppressionSquatLabel: UILabel!
     
-    @IBOutlet private weak var recoilSuppressionWalkLabel: UILabel!
+    @IBOutlet fileprivate weak var recoilSuppressionWalkLabel: UILabel!
     
-    @IBOutlet private weak var recoilSuppressionJumpLabel: UILabel!
+    @IBOutlet fileprivate weak var recoilSuppressionJumpLabel: UILabel!
     
-    @IBOutlet private weak var aimRecoilSuppressionStopLabel: UILabel!
+    @IBOutlet fileprivate weak var aimRecoilSuppressionStopLabel: UILabel!
     
-    @IBOutlet private weak var aimRecoilSuppressionSquatLabel: UILabel!
+    @IBOutlet fileprivate weak var aimRecoilSuppressionSquatLabel: UILabel!
     
-    @IBOutlet private weak var aimRecoilSuppressionWalkLabel: UILabel!
+    @IBOutlet fileprivate weak var aimRecoilSuppressionWalkLabel: UILabel!
     
-    @IBOutlet private weak var aimRecoilSuppressionJumpLabel: UILabel!
+    @IBOutlet fileprivate weak var aimRecoilSuppressionJumpLabel: UILabel!
     
-    @IBOutlet private weak var rapidFireAbilityLabel: UILabel!
+    @IBOutlet fileprivate weak var rapidFireAbilityLabel: UILabel!
     
-    @IBOutlet private weak var bulletsLabel: UILabel!
+    @IBOutlet fileprivate weak var bulletsLabel: UILabel!
     
-    @IBOutlet private weak var quicknessLabel: UILabel!
+    @IBOutlet fileprivate weak var quicknessLabel: UILabel!
     
-    @IBOutlet private weak var recoverySpeedLabel: UILabel!
+    @IBOutlet fileprivate weak var recoverySpeedLabel: UILabel!
     
-    @IBOutlet private weak var mountSpeedLabel: UILabel!
+    @IBOutlet fileprivate weak var mountSpeedLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -92,7 +92,7 @@ internal final class GunDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    private func setup() {
+    fileprivate func setup() {
         guard let weapon = weapon else { return }
         
         navigationItem.title = weapon.name

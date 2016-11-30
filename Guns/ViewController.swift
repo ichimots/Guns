@@ -10,12 +10,12 @@ import UIKit
 
 internal final class ViewController: UIViewController {
 
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet fileprivate weak var tableView: UITableView!
     
-    var kindsOfWeapon = WeaponType.PointMan
+    var kindsOfWeapon = WeaponType.pointMan
     
-    private var weapons = [Weapon]()
-    private var selectedWeapon: Weapon?
+    fileprivate var weapons = [Weapon]()
+    fileprivate var selectedWeapon: Weapon?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +23,11 @@ internal final class ViewController: UIViewController {
         
         let title: String
         switch kindsOfWeapon {
-        case .PointMan:
+        case .pointMan:
             title = "PointMan"
-        case .RifleMan:
+        case .rifleMan:
             title = "RifleMan"
-        case .SniperRifle:
+        case .sniperRifle:
             title = "SniperRifle"
         }
         navigationItem.title = title
@@ -36,9 +36,9 @@ internal final class ViewController: UIViewController {
         tableView.dataSource = self
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         if let indexPathForSelectedRow = tableView.indexPathForSelectedRow {
-            tableView.deselectRowAtIndexPath(indexPathForSelectedRow, animated: true)
+            tableView.deselectRow(at: indexPathForSelectedRow, animated: true)
         }
     }
     
@@ -49,14 +49,14 @@ internal final class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedWeapon = weapons[indexPath.row]
-        performSegueWithIdentifier("pushGunDetail", sender: nil)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedWeapon = weapons[(indexPath as NSIndexPath).row]
+        performSegue(withIdentifier: "pushGunDetail", sender: nil)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let view = segue.destinationViewController as? GunDetailViewController
-            where segue.identifier == "pushGunDetail" {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let view = segue.destination as? GunDetailViewController
+            , segue.identifier == "pushGunDetail" {
                 view.weapon = selectedWeapon
         }
     }
@@ -64,14 +64,14 @@ extension ViewController: UITableViewDelegate {
 
 extension ViewController: UITableViewDataSource {
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return weapons.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("weaponCell", forIndexPath: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "weaponCell", for: indexPath)
         
-        cell.textLabel?.text = weapons[indexPath.row].name
+        cell.textLabel?.text = weapons[(indexPath as NSIndexPath).row].name
         return cell
     }
 }

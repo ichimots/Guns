@@ -10,23 +10,23 @@ import Foundation
 
 
 enum WeaponType: String {
-    case PointMan    = "PM"
-    case RifleMan    = "RM"
-    case SniperRifle = "SR"
+    case pointMan    = "pm"
+    case rifleMan    = "rm"
+    case sniperRifle = "sr"
 }
 
 internal final class WeaponManager {
     
     static var sharedManager = WeaponManager()
     
-    private var weapons: [Weapon]?
+    fileprivate var weapons: [Weapon]?
     
-    func getWeapon(type: WeaponType) -> [Weapon] {
+    func getWeapon(_ type: WeaponType) -> [Weapon] {
         
         if weapons == nil {
             weapons = [Weapon]()
             
-            let path = NSBundle.mainBundle().pathForResource("AVA銃器スペック", ofType: "plist")
+            let path = Bundle.main.path(forResource: "AVA銃器スペック", ofType: "plist")
             let weaponObjects = NSArray(contentsOfFile: path!) as! [[String: AnyObject]]
             weaponObjects.forEach{
                 weapons?.append(weaponMapping($0))
@@ -36,7 +36,7 @@ internal final class WeaponManager {
         return weapons?.filter { $0.branch == type.rawValue } ?? [Weapon]()
     }
     
-    private func weaponMapping(item: [String: AnyObject]) -> Weapon {
+    fileprivate func weaponMapping(_ item: [String: AnyObject]) -> Weapon {
         
         return Weapon(branch               : item["兵科"] as? String ?? "",
                       name                 : item["武器名"] as? String ?? "",
@@ -59,7 +59,7 @@ internal final class WeaponManager {
                       mountSpeed           : item["装着時間"] as? Double ?? 0)
     }
     
-    private func makeShoot(item: [String: AnyObject], label: String) -> Shoot {
+    fileprivate func makeShoot(_ item: [String: AnyObject], label: String) -> Shoot {
         return Shoot(stop : item[label + "_静射"] as? Double ?? 0,
                      squat: item[label + "_蹲射"] as? Double ?? 0,
                      walk : item[label + "_動射"] as? Double ?? 0,
