@@ -19,7 +19,12 @@ internal final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        weapons = WeaponManager.sharedManager.getWeapon(kindsOfWeapon)
+        WeaponManager.sharedManager.getWeapon(kindsOfWeapon) { weapons in
+            DispatchQueue.main.async {
+                self.weapons = weapons
+                self.tableView.reloadData()
+            }
+        }
         
         let title: String
         switch kindsOfWeapon {
