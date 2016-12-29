@@ -11,7 +11,6 @@
 		DF0AEBA51D2D549300C8D9A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0AEBA41D2D549300C8D9A5 /* BaseViewController.swift */; };
 		DF78882A1D28B60700A6BB48 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7888291D28B60700A6BB48 /* Weapon.swift */; };
 		DF78882C1D28B61500A6BB48 /* WeaponManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78882B1D28B61500A6BB48 /* WeaponManager.swift */; };
-		DFA6F02B1D3B7D5200B54791 /* AVA銃器スペック.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFA6F02A1D3B7D5200B54791 /* AVA銃器スペック.plist */; };
 		DFB8D85E1E15351500BBCEC5 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB8D85D1E15351500BBCEC5 /* SwiftyJSON.framework */; };
 		DFB8D85F1E15351500BBCEC5 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFB8D85D1E15351500BBCEC5 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DFE5DA9C1CDC78040097239A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5DA9B1CDC78040097239A /* AppDelegate.swift */; };
@@ -40,7 +39,6 @@
 		DF0AEBA41D2D549300C8D9A5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DF7888291D28B60700A6BB48 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		DF78882B1D28B61500A6BB48 /* WeaponManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponManager.swift; sourceTree = "<group>"; };
-		DFA6F02A1D3B7D5200B54791 /* AVA銃器スペック.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AVA銃器スペック.plist"; sourceTree = "<group>"; };
 		DFB8D85D1E15351500BBCEC5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		DFE5DA981CDC78040097239A /* Guns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE5DA9B1CDC78040097239A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				DF0AEBA21D2C0FD900C8D9A5 /* GunDetailViewController.swift */,
 				DF78882B1D28B61500A6BB48 /* WeaponManager.swift */,
 				DF7888291D28B60700A6BB48 /* Weapon.swift */,
-				DFA6F02A1D3B7D5200B54791 /* AVA銃器スペック.plist */,
 				DFE5DAA71CDC78040097239A /* Info.plist */,
 				DFE5DAA41CDC78040097239A /* LaunchScreen.storyboard */,
 				DFE5DAA21CDC78040097239A /* Assets.xcassets */,
@@ -127,7 +124,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "ichimots";
+				ORGANIZATIONNAME = ichimots;
 				TargetAttributes = {
 					DFE5DA971CDC78040097239A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -161,7 +158,6 @@
 			files = (
 				DFE5DAA61CDC78040097239A /* LaunchScreen.storyboard in Resources */,
 				DFE5DAA31CDC78040097239A /* Assets.xcassets in Resources */,
-				DFA6F02B1D3B7D5200B54791 /* AVA銃器スペック.plist in Resources */,
 				DFE5DAA11CDC78040097239A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

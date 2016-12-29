@@ -70,7 +70,7 @@ internal final class WeaponManager {
     
     
     private func getJson(completion: @escaping (JSON) -> Void) {
-        let url = URL(string: "http://avaguns.xxxxxxxx.jp/AVAGuns.json")!
+        let url = URL(string: "https://raw.githubusercontent.com/ichimots/Guns/master/Guns/AVAGuns.json")!
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else {
